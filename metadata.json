@@ -1,0 +1,5 @@
+{
+  "name": "Seso Collection Tracker",
+  "description": "A modern financial collections tracking dashboard integrating QuickBooks, Google Sheets, and Notion.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seso Collection Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <!-- AG Grid Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ag-grid-community@31.1.1/styles/ag-grid.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ag-grid-community@31.1.1/styles/ag-theme-alpine.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+            },
+            colors: {
+              seso: {
+                dark: '#0f241a',
+                main: '#047857', // Emerald 700 roughly
+                light: '#34d399',
+                accent: '#10b981',
+                surface: '#18181b', // Zinc 900
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #09090b;
+        color: #ffffff;
+      }
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .gradient-text {
+        background: linear-gradient(to right, #34d399, #10b981);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      /* AG Grid Dark Theme Overrides for Seso Look */
+      .ag-theme-alpine-dark {
+        --ag-background-color: #18181b;
+        --ag-header-background-color: #0f241a;
+        --ag-odd-row-background-color: rgba(255, 255, 255, 0.02);
+        --ag-border-color: rgba(255, 255, 255, 0.1);
+        --ag-row-border-color: rgba(255, 255, 255, 0.05);
+        --ag-header-foreground-color: #34d399;
+        --ag-foreground-color: #e4e4e7;
+        --ag-font-family: 'Inter', sans-serif;
+      }
+      .ag-root-wrapper {
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 0.75rem;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@18.2.0",
+    "react/": "https://aistudiocdn.com/react@18.2.0/",
+    "react-dom": "https://aistudiocdn.com/react-dom@18.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@18.2.0/",
+    "react-dom/client": "https://aistudiocdn.com/react-dom@18.2.0/client",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@6.22.3",
+    "@remix-run/router": "https://aistudiocdn.com/@remix-run/router@1.15.3",
+    "@reduxjs/toolkit": "https://aistudiocdn.com/@reduxjs/toolkit@2.2.1",
+    "react-redux": "https://aistudiocdn.com/react-redux@9.1.0",
+    "ag-grid-react": "https://aistudiocdn.com/ag-grid-react@31.1.1",
+    "ag-grid-community": "https://aistudiocdn.com/ag-grid-community@31.1.1",
+    "highcharts": "https://aistudiocdn.com/highcharts@11.4.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@0.344.0",
+    "@reduxjs/toolkit/": "https://aistudiocdn.com/@reduxjs/toolkit@^2.10.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
